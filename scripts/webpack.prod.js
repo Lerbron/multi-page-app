@@ -48,7 +48,7 @@ const prodConfig = {
       ignoreOrder: true,
     }),
     new CompressionPlugin({
-      test: /\.js(\?.*)?$/i,
+      test: /\.js$|\.s?css$|\.html$/,
       algorithm: 'gzip',
       compressionOptions: { level: 5 },
     }),

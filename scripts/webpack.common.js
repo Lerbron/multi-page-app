@@ -9,12 +9,8 @@ const {
   separator,
   isDev
 } = require('./utils/constant')
-const {
-  getEntryTemplate
-} = require('./utils/helper')
-const {
-  getCssLoaders
-} = require("./utils/getCssLoaders");
+const { getEntryTemplate } = require('./utils/helper')
+const { getCssLoaders } = require("./utils/getCssLoaders");
 
 // 将packages拆分成为数组 ['editor','home']
 const packages = process.env.packages.split(separator)
